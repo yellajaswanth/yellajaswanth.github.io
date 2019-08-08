@@ -4,7 +4,7 @@ title: Jaswanth Yella
 permalink: /
 ---
 
-I'm currently a Ph.D. student in Computer Sciences at the University of Cincinnati. My advisors are Dr. Anil Jegga and Dr. Ali A. Minai. My research interests are in graph neural networks, knowledge representation learning, and computational drug discovery. 
+I am a Ph.D. student in Computer Sciences at the University of Cincinnati. My advisors are Dr. Anil Jegga and Dr. Ali A. Minai. My research interests are in graph neural networks, knowledge representation learning, and computational drug discovery. 
 
 I achieved my Master's degree at the University of Cincinnati in December 2018 under the same advisors. During my Master's thesis, my research focussed on identifying and characterizing drug-drug interactions (DDI) using machine-learning methods. I conceived and developed a novel protocol by extracting, pre-processing and predicting DDI severity using drug annotation profiles and best performing machine learning algorithm. 
 
