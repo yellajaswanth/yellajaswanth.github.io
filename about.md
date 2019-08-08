@@ -24,11 +24,11 @@ REMODELING IN LUNG FIBROSIS, pages A2228–A2228. American Thoracic Society, 201
 associated genes and biomarkers. BMC pulmonary medicine, 17(1):133, 2017.
 
 ### Education
-* Ph.D in Computer Science, 2021 (Expected) . 
+* Ph.D in Computer Science, 2021 (Expected)<br/>
   University of Cincinnati
-* MS in Computer Science, 2018 . 
+* MS in Computer Science, 2018<br/>
   University of Cincinnati
-* B.Tech in Computer Science, 2013 . 
+* B.Tech in Computer Science, 2013<br/>
   Jawaharlal Nehru Technological University
 
 
