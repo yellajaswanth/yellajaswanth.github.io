@@ -10,6 +10,11 @@ I achieved my Master's degree at the University of Cincinnati in December 2018 u
 
 ### Publications
 
+* Jaswanth K Yella, Anil G Jegga. MGATRx: Discovering Drug Repositioning Candidates Using Multi-view Graph. In Proceedings of BIOKDD’20: International Workshop on Data Mining for Bioinformatics. 2020.
+
+* Yunguan Wang, Jaswanth K Yella, Sudhir Ghandikota, Tejaswini C Cherukuri, Satish K Madala, Anil G Jegga. Pan-transcriptome-based Candidate Therapeutic Discovery for Idiopathic Pulmonary Fibrosis. bioRxiv 2019.
+
+
 * Yunguan Wang, Jaswanth Yella, and Anil G Jegga. Transcriptomic data mining and repurposing for computational drug discovery. In Computational Methods for Drug Repurposing, pages 73–95. Humana Press, New York, NY, 2019.
 
 * Jaswanth Yella, Suryanarayana Yaddanapudi, Yunguan Wang, and Anil Jegga. Changing trends in computational drug repositioning. Pharmaceuticals, 11(2):57, 2018.
