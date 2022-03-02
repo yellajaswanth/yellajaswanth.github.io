@@ -6,7 +6,7 @@ permalink: /
 
 I'm currently a Ph.D. student in Computer Sciences at the University of Cincinnati. My advisors are Dr. Anil Jegga and Dr. Ali A. Minai. My research interests are in graph neural networks, language models, and computational drug discovery. 
 
-My current Ph.D. research primarily focused on generating explainable hypotheses via graph neural network models for drug discovery and characterization. More specifically to understand and characterize mono- and multi-drug-therapy effects on patients. This encompasses cleaning and normalizing data using biomedical ontologies, training multi-modal and heterogenous graph neural networks on biomedical data and electronic health records, and interpreting the predictions using explainable AI models.
+My current Ph.D. research is primarily focused towards generating explainable hypotheses via graph neural network models for drug discovery and characterization. More specifically to understand and characterize mono- and multi-drug-therapy effects on patients. This encompasses cleaning and normalizing data using biomedical ontologies, training multi-modal and heterogenous graph neural networks on biomedical data and electronic health records, and interpreting the predictions using explainable AI models.
 
 I achieved my Master's degree at the University of Cincinnati in December 2018 under the same advisors. During my Master's thesis, my research focused on identifying and characterizing drug-drug interactions (DDI) using machine-learning methods. I conceived and developed a novel protocol by extracting, pre-processing, and predicting DDI severity using drug annotation profiles and best-performing machine learning algorithm.
 
