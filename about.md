@@ -3,10 +3,28 @@ layout: page
 title: About
 permalink: /about/
 ---
+<p>Hello! 👋 </p>
 
-I'm currently a Ph.D. student in Computer Sciences at the University of Cincinnati. My advisors are Dr. Anil Jegga and Dr. Ali A. Minai. My research interests are in graph neural networks, knowledge representation learning, and computational drug discovery. 
+<p>I am a Ph.D. student at the University of Cincinnati, working under the guidance of Prof. Anil Jegga and
+Prof. Ali
+Minai. </p>
 
-I achieved my Master's degree at the University of Cincinnati in December 2018 under the same advisors. During my Master's thesis, my research focussed on identifying and characterizing drug-drug interactions (DDI) using machine-learning methods. I conceived and developed a novel protocol by extracting, pre-processing and predicting DDI severity using drug annotation profiles and best performing machine learning algorithm. 
+<p>
+In my PhD research, I have been studying the capabilities of graph neural networks (GNN) in handling complex
+networks,
+primarily focusing on multimodal datasets. My published work includes in-depth analysis of biomedical
+networks and
+modeling them via graph neural networks. Furthermore, while working at Seagate, I evaluated the capabilities
+and limitations of Transformers and convolutions in semicounductor (soft-sensing) data. This led me to
+propose innovative approaches for addressing imbalanced time-series datasets.
+</p>
+
+<p>
+In the moments I wrest from the fabric of time, I enjoy thinking about startups, economics, and humans in
+space. For fun,
+I build things 👨🏼‍💻, lift weights 🏋🏻‍♂️, watch movies 🍿, read books 📚, and practice guitar 🎸.
+
+</p>
 
 ### Publications
 
