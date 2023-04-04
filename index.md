@@ -5,26 +5,23 @@ permalink: /
 ---
 <p>Hello! 👋 </p>
 
-<p>I am a Ph.D. student at the University of Cincinnati, working under the guidance of Prof. Anil Jegga and
-Prof. Ali
-Minai. </p>
+<p>I am a Ph.D. student at the University of Cincinnati, working under the guidance of Prof. Anil Jegga and Prof. Ali A. Minai. </p>
+
+<p>My doctoral research has focused on the study of graph neural networks (GNN) and their ability to handle complex networks, particularly those involving multimodal datasets. I have published several papers analyzing biomedical networks and modeling them via GNN.</p>
+
+  
+<p>During my PhD program, I also interned at Seagate where I investigated Transformers and convolutions for soft-sensing semiconductor data. This work led me to propose innovative approaches for addressing imbalanced time-series datasets.</p>
+
+
+<p>Prior to pursuing academia, I had the opportunity to work as a founding team member in several innovative product startups in healthcare, advertising, and cloud storage industries. These experiences helped me gain valuable insights into building products from the ground up and raising capital to bring these ideas to fruition.</p>
+
 
 <p>
-In my PhD research, I have been studying the capabilities of graph neural networks (GNN) in handling complex
-networks,
-primarily focusing on multimodal datasets. My published work includes in-depth analysis of biomedical
-networks and
-modeling them via graph neural networks. Furthermore, while working at Seagate, I evaluated the capabilities
-and limitations of Transformers and convolutions in semicounductor (soft-sensing) data. This led me to
-propose innovative approaches for addressing imbalanced time-series datasets.
+    In the moments I wrest from the fabric of time, I enjoy thinking about startups, economics, and humans in
+    space. For fun, I build things 👨🏼‍💻, lift weights 🏋🏻‍♂️, watch movies 🍿, play video games 🎮, read books 📚, and practice guitar 🎸.
 </p>
 
-<p>
-In the moments I wrest from the fabric of time, I enjoy thinking about startups, economics, and humans in
-space. For fun,
-I build things 👨🏼‍💻, lift weights 🏋🏻‍♂️, watch movies 🍿, read books 📚, and practice guitar 🎸.
 
-</p>
 
 
 
