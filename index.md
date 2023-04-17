@@ -48,7 +48,7 @@ REMODELING IN LUNG FIBROSIS, pages A2228–A2228. American Thoracic Society, 201
 
 
 ### Education
-* Ph.D in Computer Science, 2022 (Expected)<br/>
+* Ph.D in Computer Science, 2023<br/>
   University of Cincinnati
 * MS in Computer Science, 2018<br/>
   University of Cincinnati
