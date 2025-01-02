@@ -1,3 +1,8 @@
+---
+layout: post
+title: Recommender Systems Best Practices - Feature Engineering
+---
+
 ### Introduction: The Challenge of Feature Engineering
 
 Building models for recommender systems is exciting, but designing the right features is often a frustrating task. While I enjoy the modeling side, I frequently find myself struggling to come up with useful features. This article explores the challenges of feature engineering, focusing on data leakage, the costs of new features, and the engineering trade-offs we must consider.
