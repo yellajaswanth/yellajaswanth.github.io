@@ -33,6 +33,7 @@ When considering new features, it’s crucial to ask:
 
 Improving model performance from 50% to 70% on a given focus metric might justify the effort needed to implement a new feature. However, a 0.5% improvement, achieved at a high computational cost, might not be worth the trade-off, especially if the engineering effort is unsustainable long-term.
 
-### Conclusion: Building Sustainable Recommender Systems
 
 In feature engineering, it’s essential to balance model improvement with the engineering cost of implementing new features. Avoiding data leakage and carefully considering the practical implications of new features can help build more sustainable and effective recommender systems.
+
+(Pending...)
