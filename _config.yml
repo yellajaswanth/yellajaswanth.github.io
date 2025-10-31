@@ -6,7 +6,7 @@
 name: Jaswanth Yella
 
 # Short bio or description (displayed in the header)
-description: PhD student at University of Cincinnati
+description: AI Researcher & Data Scientist | PhD'23 | RecSys, Personalization, Future AI
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://avatars.githubusercontent.com/u/3152270?s=400&u=658a454588a6ff612a288089262171d04dfff0d4&v=4
@@ -36,8 +36,8 @@ footer-links:
 # You can find your shortname on the Settings page of your Disqus account
 disqus:
 
-# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics:
+# Enter your Google Analytics web tracking code (e.g. G-XXXXXXXXXX) to activate tracking
+google_analytics: G-0PBJ4RHH86
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
@@ -47,7 +47,7 @@ url:
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)
 # then add in the baseurl here, like this: "/repository-name"
-baseurl: "/"
+baseurl: ""
 
 #
 # !! You don't need to change any of the configuration flags below !!

@@ -1,0 +1,53 @@
+---
+layout: default
+title: Miscellaneous
+permalink: /category/misc/
+---
+
+<div class="category-header">
+  <h1>🚀 Miscellaneous</h1>
+  <p>Thoughts on space research, startup insights, economics, and other topics that spark curiosity. A collection of ideas that don't fit neatly into the main categories but are worth exploring.</p>
+</div>
+
+<div class="posts">
+  {% if site.categories.misc %}
+    {% assign misc_posts = site.categories.misc | sort: 'date' | reverse %}
+  {% else %}
+    {% assign misc_posts = '' | split: '' %}
+  {% endif %}
+  {% if misc_posts.size > 0 %}
+    {% for post in misc_posts %}
+      <article class="post">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="post-meta">
+          {{ post.date | date: "%B %e, %Y" }}
+          {% if post.series %}
+            • Part {{ post.part }} of <strong>{{ post.series }}</strong>
+          {% endif %}
+        </p>
+        {% if post.tags %}
+          <div class="post-tags">
+            {% for tag in post.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+        <div class="post-excerpt">
+          {{ post.excerpt | strip_html | truncatewords: 50 }}
+        </div>
+        <a href="{{ post.url }}" class="read-more">Read More →</a>
+      </article>
+    {% endfor %}
+  {% else %}
+    <div class="no-posts">
+      <p>🚧 Posts coming soon! I'm exploring topics like:</p>
+      <ul>
+        <li>Space exploration and colonization</li>
+        <li>Startup analysis and market insights</li>
+        <li>Economics and technology trends</li>
+        <li>Book reviews and personal reflections</li>
+        <li>Random thoughts and observations</li>
+      </ul>
+    </div>
+  {% endif %}
+</div>

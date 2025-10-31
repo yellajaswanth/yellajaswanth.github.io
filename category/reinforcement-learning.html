@@ -1,0 +1,53 @@
+---
+layout: default
+title: Reinforcement Learning
+permalink: /category/reinforcement-learning/
+---
+
+<div class="category-header">
+  <h1>🤖 Reinforcement Learning</h1>
+  <p>Exploring the world of agents, environments, and learning through interaction. From fundamentals to cutting-edge research in deep RL, multi-agent systems, and real-world applications.</p>
+</div>
+
+<div class="posts">
+  {% if site.categories.reinforcement-learning %}
+    {% assign rl_posts = site.categories.reinforcement-learning | sort: 'date' | reverse %}
+  {% else %}
+    {% assign rl_posts = '' | split: '' %}
+  {% endif %}
+  {% if rl_posts.size > 0 %}
+    {% for post in rl_posts %}
+      <article class="post">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="post-meta">
+          {{ post.date | date: "%B %e, %Y" }}
+          {% if post.series %}
+            • Part {{ post.part }} of <strong>{{ post.series }}</strong>
+          {% endif %}
+        </p>
+        {% if post.tags %}
+          <div class="post-tags">
+            {% for tag in post.tags %}
+              <span class="tag">{{ tag }}</span>
+            {% endfor %}
+          </div>
+        {% endif %}
+        <div class="post-excerpt">
+          {{ post.excerpt | strip_html | truncatewords: 50 }}
+        </div>
+        <a href="{{ post.url }}" class="read-more">Read More →</a>
+      </article>
+    {% endfor %}
+  {% else %}
+    <div class="no-posts">
+      <p>🚧 Posts coming soon! I'm working on comprehensive content covering:</p>
+      <ul>
+        <li>Policy Gradient Methods</li>
+        <li>Deep Q-Networks and variants</li>
+        <li>Multi-Agent Reinforcement Learning</li>
+        <li>Real-world RL applications</li>
+        <li>RL for Robotics and Control</li>
+      </ul>
+    </div>
+  {% endif %}
+</div>
