@@ -67,7 +67,7 @@ h4 {
 p {
   margin: 15px 0; 
 text-align: justify;
-	font-family:  $helvetica;
+	font-family: $helvetica;
 }
 
 a {
@@ -213,27 +213,26 @@ img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  text-align: center;
+  margin-top: 23px;
   font-family: $helveticaNeue;
   font-size: 18px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 
   @include mobile {
-    float: none;
     margin-top: 9px;
-    display: block;
     font-size: 16px;
   }
 
   a {
-    margin-left: 20px;
+    margin: 0 10px;
     color: $darkGray;
-    text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
 
     @include mobile {
-      margin: 0 10px;
       color: $blue;
     }
   }
@@ -288,4 +287,337 @@ footer {
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
+
+/**************/
+/* CATEGORY & TAG STYLES */
+/**************/
+
+// Category overview cards
+.category-overview {
+  margin: 2em 0;
+}
+
+.category-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  margin: 1.5em 0;
+}
+
+/* Mobile responsive */
+@media screen and (max-width: 640px) {
+  .category-cards {
+    grid-template-columns: 1fr;
+    gap: 1em;
+    margin: 1em 0;
+  }
+  
+  .category-card {
+    padding: 1em;
+  }
+}
+
+/* Fallback for older browsers */
+@supports not (display: grid) {
+  .category-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.75em;
+  }
+  
+  .category-card {
+    flex: 1 1 250px;
+    margin: 0.75em;
+  }
+}
+
+.category-card {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1.5em;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.category-card h3 {
+  margin: 0 0 0.5em 0;
+  font-size: 1.2em;
+}
+
+.category-card h3 a {
+  color: #222;
+  text-decoration: none;
+}
+
+.category-card h3 a:hover {
+  color: #4183C4;
+}
+
+.category-card p {
+  margin: 0.5em 0;
+  font-weight: bold;
+  color: #4183C4;
+  font-size: 0.9em;
+}
+
+.category-card span {
+  color: #666;
+  font-size: 0.9em;
+  display: block;
+  line-height: 1.4;
+}
+
+// Category and tag styling
+.category-tag, .tag {
+  display: inline-block;
+  background: $blue;
+  color: white;
+  padding: 0.3em 0.8em;
+  border-radius: 15px;
+  font-size: 0.8em;
+  text-decoration: none;
+  margin: 0.2em 0.3em 0.2em 0;
+  transition: background-color 0.2s ease;
+  
+  &:hover {
+    background: darken($blue, 10%);
+    color: white;
+  }
+}
+
+.tag {
+  background: $lightGray;
+  color: $darkerGray;
+  
+  &:hover {
+    background: darken($lightGray, 10%);
+  }
+}
+
+// Post header styling
+.post-header {
+  margin-bottom: 2em;
+  
+  .post-categories {
+    margin-bottom: 1em;
+  }
+  
+  .series-info {
+    background: #f8f9fa;
+    border-left: 4px solid $blue;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 0 4px 4px 0;
+    
+    p {
+      margin: 0;
+      font-style: italic;
+    }
+  }
+}
+
+// Post footer styling
+.post-footer {
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #e9ecef;
+  
+  .date {
+    margin-bottom: 1em;
+  }
+  
+  .post-tags {
+    margin-top: 1em;
+  }
+}
+
+// Related posts styling
+.related-posts {
+  margin-top: 3em;
+  padding-top: 2em;
+  border-top: 2px solid #e9ecef;
+  
+  h3 {
+    color: $darkerGray;
+    margin-bottom: 1em;
+  }
+  
+  p {
+    margin: 0.5em 0;
+    
+    a {
+      color: $blue;
+      text-decoration: none;
+      font-weight: 500;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  .related-date {
+    color: $gray;
+    font-size: 0.9em;
+    font-weight: normal;
+  }
+}
+
+// Blog page styling
+.blog-header {
+  text-align: center;
+  margin: 2em 0;
+  
+  h1 {
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    color: $gray;
+    font-size: 1.1em;
+  }
+}
+
+.recent-posts {
+  margin-top: 3em;
+  
+  h2 {
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 0.5em;
+    margin-bottom: 1.5em;
+  }
+}
+
+.post-meta-header {
+  margin-bottom: 0.5em;
+  
+  .post-categories {
+    margin-bottom: 0.5em;
+  }
+}
+
+.post-excerpt {
+  color: $gray;
+  margin: 1em 0;
+  line-height: 1.6;
+}
+
+.read-more {
+  color: $blue;
+  text-decoration: none;
+  font-weight: 500;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// Category page styling
+.category-header {
+  text-align: center;
+  margin: 2em 0 3em 0;
+  
+  h1 {
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    color: $gray;
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+.no-posts {
+  text-align: center;
+  padding: 3em 2em;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin: 2em 0;
+  
+  p {
+    margin-bottom: 1.5em;
+    font-size: 1.1em;
+  }
+  
+  ul {
+    text-align: left;
+    display: inline-block;
+    color: $gray;
+    
+    li {
+      margin: 0.5em 0;
+    }
+  }
+}
+
+// About page styling
+.about-hero {
+  text-align: center;
+  margin: 3em 0;
+  padding: 2em 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border-radius: 12px;
+}
+
+.about-hero h1 {
+  margin: 0 0 0.5em 0;
+  font-size: 2.5em;
+  color: #222;
+}
+
+.about-subtitle {
+  font-size: 1.2em;
+  color: #666;
+  font-style: italic;
+  margin: 0;
+}
+
+// Publications styling
+.about-page h3 {
+  color: #4183C4;
+  border-bottom: 2px solid #e9ecef;
+  padding-bottom: 0.5em;
+  margin-top: 2em;
+}
+
+.about-page ul li {
+  margin: 1em 0;
+  line-height: 1.6;
+}
+
+.about-page ul li strong {
+  color: #222;
+}
+
+// Connect section styling
+.about-page hr {
+  margin: 3em 0 1em 0;
+  border: none;
+  border-top: 2px solid #e9ecef;
+}
+
+@media screen and (max-width: 640px) {
+  .about-hero {
+    margin: 2em 0;
+    padding: 1.5em 1em;
+  }
+  
+  .about-hero h1 {
+    font-size: 2em;
+  }
+  
+  .about-subtitle {
+    font-size: 1.1em;
+  }
+}
+
 @import "svg-icons";

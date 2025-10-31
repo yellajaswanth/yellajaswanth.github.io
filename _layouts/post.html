@@ -3,15 +3,62 @@ layout: default
 ---
 
 <article class="post">
-  <h1>{{ page.title }}</h1>
+  <div class="post-header">
+    {% if page.categories %}
+      <div class="post-categories">
+        {% for category in page.categories %}
+          <a href="/category/{{ category | slugify }}/" class="category-tag">{{ category | replace: "-", " " | capitalize }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+    
+    <h1>{{ page.title }}</h1>
+    
+    {% if page.series %}
+      <div class="series-info">
+        <p>📚 Part {{ page.part }} of the <strong>{{ page.series }}</strong> series</p>
+      </div>
+    {% endif %}
+  </div>
 
   <div class="entry">
     {{ content }}
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
+  <div class="post-footer">
+    <div class="date">
+      Written on {{ page.date | date: "%B %e, %Y" }}
+    </div>
+    
+    {% if page.tags %}
+      <div class="post-tags">
+        <strong>Tags:</strong> 
+        {% for tag in page.tags %}
+          <span class="tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
   </div>
+
+  <!-- Related Posts -->
+  {% if page.categories %}
+    <div class="related-posts">
+      <h3>Related Posts</h3>
+      {% assign related_posts = site.posts | where_exp: "post", "post.categories contains page.categories.first" | limit: 4 %}
+      {% assign related_count = 0 %}
+      {% for post in related_posts %}
+        {% unless post.url == page.url %}
+          {% assign related_count = related_count | plus: 1 %}
+          {% if related_count <= 3 %}
+            <p><a href="{{ post.url }}">{{ post.title }}</a> <span class="related-date">({{ post.date | date: "%b %Y" }})</span></p>
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+      {% if related_count == 0 %}
+        <p>More posts in this category coming soon!</p>
+      {% endif %}
+    </div>
+  {% endif %}
 
   {% include disqus.html %}
 </article>

@@ -1,61 +1,73 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: /
 ---
-<p>Hello! 👋 </p>
 
-<p>I am a Ph.D. student at the University of Cincinnati, working under the guidance of Prof. Anil Jegga and
-Prof. Ali
-Minai. </p>
+<div class="about-hero">
+  <h1>Building AI That Matters</h1>
+  <p class="about-subtitle" style="text-align: center">From Research to Production, Exploring Tomorrow's Possibilities</p>
+</div>
 
-<p>
-In my PhD research, I have been studying the capabilities of graph neural networks (GNN) in handling complex
-networks,
-primarily focusing on multimodal datasets. My published work includes in-depth analysis of biomedical
-networks and
-modeling them via graph neural networks. Furthermore, while working at Seagate, I evaluated the capabilities
-and limitations of Transformers and convolutions in semicounductor (soft-sensing) data. This led me to
-propose innovative approaches for addressing imbalanced time-series datasets.
-</p>
+## Current Focus
 
-<p>
-In the moments I wrest from the fabric of time, I enjoy thinking about startups, economics, and humans in
-space. For fun,
-I build things 👨🏼‍💻, lift weights 🏋🏻‍♂️, watch movies 🍿, read books 📚, and practice guitar 🎸.
+<p>Hello! 👋 I'm currently a <strong>Data Scientist at Sephora</strong>, where I build recommendation systems and personalization engines that serve millions of customers. My work focuses on next-best-content optimization, offer personalization, and scaling AI systems that directly impact business outcomes.</p>
 
-</p>
+<p>Beyond my professional role, I'm passionate about exploring the frontiers of AI technology. This blog is where I dive deep into <strong>Large Language Models</strong>, <strong>Reinforcement Learning</strong>, <strong>Humanoid Robotics</strong>, and advanced <strong>Recommender Systems</strong> - sharing insights, experiments, and thoughts on where AI is heading.</p>
 
-### Publications
+## Background & Expertise
 
-* Jaswanth K Yella, Anil G Jegga. MGATRx: Discovering Drug Repositioning Candidates Using Multi-view Graph. In Proceedings of BIOKDD’20: International Workshop on Data Mining for Bioinformatics. 2020.
+<p>I completed my <strong>PhD in Computer Science</strong> at the University of Cincinnati in 2023, where I specialized in graph neural networks and their applications to complex multimodal datasets. My doctoral research focused on biomedical networks, resulting in several published papers and novel approaches to network analysis.</p>
 
-* Yunguan Wang, Jaswanth K Yella, Sudhir Ghandikota, Tejaswini C Cherukuri, Satish K Madala, Anil G Jegga. Pan-transcriptome-based Candidate Therapeutic Discovery for Idiopathic Pulmonary Fibrosis. bioRxiv 2019.
+<p>During my PhD, I also gained valuable industry experience at <strong>Seagate</strong>, where I investigated Transformers and convolutional approaches for semiconductor soft-sensing data. This work led to innovative solutions for handling imbalanced time-series datasets and bridged the gap between academic research and real-world applications.</p>
+
+## Entrepreneurial Journey
+
+<p>Before diving deep into AI research, I was part of founding teams across multiple startups in wellness, advertising, and cloud storage. These experiences taught me the importance of "failure", the real struggle of 0-->1, building products that solve real problems and the challenges of scale from concept to market.</p>
+
+<!-- ## Research Interests & Future Vision
+
+<p>I believe we're at an inflection point in AI development. My current research interests include:</p>
+
+<ul>
+  <li><strong>Large Language Models:</strong> Novel architectures, fine-tuning strategies, and real-world deployment</li>
+  <li><strong>Reinforcement Learning:</strong> Applications in robotics, recommendation systems, and autonomous decision-making</li>
+  <li><strong>Humanoid Robotics:</strong> The intersection of AI, mechanical engineering, and human-robot interaction</li>
+  <li><strong>Advanced RecSys:</strong> Graph-based approaches, multi-modal recommendations, and personalization at scale</li>
+</ul> -->
+
+## What Drives Me
+
+<p>I'm fascinated by the potential of AI to transform industries and improve lives. Whether it's helping someone discover their perfect product through personalization or envisioning robots that can assist in daily tasks, I'm driven by the intersection of cutting-edge technology and practical impact.</p>
+
+<p>I'm fascinated by the potential of AI to transform industries and improve lives, but what really excites me is something deeper: the patterns of intelligence <a href="https://www.goodreads.com/book/show/13587129-regenesis">that nature has been perfecting for eons</a>.</p>
+
+<p>Whether I'm building recommendation systems that help millions find what they need, or exploring how robots might one day work alongside natural systems, I'm always asking: <em>How can we build AI that learns the way life learns?</em> How can we create technology that adapts, balances, and serves the larger web of existence?</p>
+
+<p>Every breakthrough in machine learning feels like an echo of evolution - trial, adaptation, and gradual improvement replayed <a href="https://x.com/karpathy/status/1599852921541128194">(the flywheel) at human speed</a>. This perspective guides everything I do, from optimizing algorithms to exploring the frontiers of LLMs and robotics.</p>
+
+<p>I believe the most profound AI won't just solve human problems - it will help us understand and serve the natural intelligence that created us.</p>
 
 
-* Yunguan Wang, Jaswanth Yella, and Anil G Jegga. Transcriptomic data mining and repurposing for computational drug discovery. In Computational Methods for Drug Repurposing, pages 73–95. Humana Press, New York, NY, 2019.
+## Research Profile
 
-* Jaswanth Yella, Suryanarayana Yaddanapudi, Yunguan Wang, and Anil Jegga. Changing trends in computational drug repositioning. Pharmaceuticals, 11(2):57, 2018.
+[Google Scholar](https://scholar.google.com/citations?user=y3JzbD4AAAAJ&hl=en)
 
-* Y Wang, S Yaddanapudi1, J Yella, V Sontake, SK Madala, and A Jegga. Integrative omics to discover drug repurposing candidates for idiopathic pulmonary fibrosis. In A42. ILD SCIENTIFIC ABSTRACTS: TREATMENT AND ACUTE EXACERBATION, pages A1637–
-A1637. American Thoracic Society, 2018.
-
-* Y Wang, J Yella, SK Madala, and A Jegga. Prioritizing idiopathic pulmonary fibrosis candidate genes based on” guilt by association” analysis. In A68. MOLECULAR DETERMINANTS OF
-REMODELING IN LUNG FIBROSIS, pages A2228–A2228. American Thoracic Society, 2018.
-
-* Yunguan Wang, Jaswanth Yella, Jing Chen, Francis X McCormack, Satish K Madala, and Anil G Jegga. Unsupervised gene expression analyses identify ipf-severity correlated signatures,
-associated genes and biomarkers. BMC pulmonary medicine, 17(1):133, 2017.
-
-### Education
-* Ph.D in Computer Science, 2022 (Expected)<br/>
-  University of Cincinnati
-* MS in Computer Science, 2018<br/>
-  University of Cincinnati
-* B.Tech in Computer Science, 2013<br/>
+## Education 
+* **Ph.D in Computer Science**, 2023<br/>
+  University of Cincinnati <br/> 
+  Dissertation: [Graph Neural Networks for Complex Multimodal Systems](https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=ucin1684773048837483&disposition=inline)
+* **MS in Computer Science**, 2018<br/>
+  University of Cincinnati <br/>
+  Thesis: [Machine learning-based prediction and characterization of drug-drug interactions](https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=ucin154399419112613&disposition=inline)
+* **B.Tech in Computer Science**, 2013<br/>
   Jawaharlal Nehru Technological University
 
+## Let's Connect
 
+I'm always interested in discussing AI, robotics, and the future of technology. Whether you're a researcher, entrepreneur, or just curious about these fields, I'd love to hear from you.
 
-### Contact me
-Feel free to reach me at
-[yellajk@mail.uc.edu](mailto:yellajk@mail.uc.edu)
+**Reach out:** [yellajk@mail.uc.edu](mailto:yellajk@mail.uc.edu)
+
+---
+*This blog represents my personal views and research interests, not those of my employer.*

@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Recommender Systems Best Practices - Feature Engineering
+categories: [recsys]
+tags: [recommender-systems, feature-engineering, machine-learning, data-leakage]
+excerpt: "Exploring the challenges of feature engineering in recommender systems, focusing on data leakage, costs of new features, and engineering trade-offs."
 ---
 
 ### Introduction: The Challenge of Feature Engineering

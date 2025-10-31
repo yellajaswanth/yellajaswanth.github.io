@@ -2,19 +2,64 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
-      <p>{{ post.date | date_to_string }}</p>
+<div class="blog-header">
+  <h1>All Posts</h1>
+  <p>Exploring AI, robotics, and the future of technology through research and practical insights.</p>
+</div>
 
-<!--       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+<div class="category-overview">
+  <div class="category-cards">
+    <div class="category-card">
+      <h3><a href="/category/reinforcement-learning/">🤖 Reinforcement Learning</a></h3>
+      <p>{{ site.categories.reinforcement-learning | size }} posts</p>
+      <span>Agents, environments, and learning through interaction</span>
+    </div>
+    <div class="category-card">
+      <h3><a href="/category/humanoids/">🦾 Humanoids</a></h3>
+      <p>{{ site.categories.humanoids | size }} posts</p>
+      <span>The fascinating world of humanoid robotics</span>
+    </div>
+    <div class="category-card">
+      <h3><a href="/category/llms/">🧠 Large Language Models</a></h3>
+      <p>{{ site.categories.llms | size }} posts</p>
+      <span>Architecture, training, and deployment insights</span>
+    </div>
+    <div class="category-card">
+      <h3><a href="/category/recsys/">🎯 Recommender Systems</a></h3>
+      <p>{{ site.categories.recsys | size }} posts</p>
+      <span>Algorithms and engineering for personalized experiences</span>
+    </div>
+    <div class="category-card">
+      <h3><a href="/category/misc/">🚀 Miscellaneous</a></h3>
+      <p>{{ site.categories.misc | size }} posts</p>
+      <span>Space, startups, and random thoughts</span>
+    </div>
+  </div>
+</div>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a> -->
-    </article>
-  {% endfor %}
+<div class="recent-posts">
+  <h2>Recent Posts</h2>
+  <div class="posts">
+    {% for post in site.posts limit:10 %}
+      <article class="post">
+        <div class="post-meta-header">
+          {% if post.categories %}
+            <div class="post-categories">
+              {% for category in post.categories %}
+                <a href="/category/{{ category | slugify }}/" class="category-tag">{{ category | replace: "-", " " | capitalize }}</a>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </div>
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="post-meta">{{ post.date | date: "%B %e, %Y" }}</p>
+        {% if post.excerpt %}
+          <div class="post-excerpt">
+            {{ post.excerpt | strip_html | truncatewords: 30 }}
+          </div>
+        {% endif %}
+        <a href="{{ post.url }}" class="read-more">Read More →</a>
+      </article>
+    {% endfor %}
+  </div>
 </div>
