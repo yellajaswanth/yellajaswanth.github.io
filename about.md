@@ -5,7 +5,7 @@ permalink: /
 ---
 
 <div class="about-hero">
-  <h1>Building AI That Matters</h1>
+  <h1>Building Intelligence That Matters</h1>
   <p class="about-subtitle" style="text-align: center">From Research to Production, Exploring Tomorrow's Possibilities</p>
 </div>
 
