@@ -13,7 +13,8 @@
       <nav class="site-nav">
         <a href="{{ site.baseurl }}/">Home</a>
         <a href="{{ site.baseurl }}/publications/">Publications</a>
-        <a href="{{ site.baseurl }}/blog/">Writing</a>
+        {% assign public_posts = site.posts | where_exp: "p", "p.archived != true" %}
+        {% if public_posts.size > 0 %}<a href="{{ site.baseurl }}/blog/">Writing</a>{% endif %}
       </nav>
 
       <main id="main" role="main">
