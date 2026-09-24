@@ -1,4 +1,6 @@
 ---
+archived: true
+sitemap: false
 layout: post
 title: vLLM Paging and Memory Management
 categories: [llms]

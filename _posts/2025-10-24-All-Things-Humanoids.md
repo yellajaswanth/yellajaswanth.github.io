@@ -1,4 +1,6 @@
 ---
+archived: true
+sitemap: false
 layout: post
 title: All about humanoids 
 categories: [humanoids]
